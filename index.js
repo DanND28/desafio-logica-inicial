@@ -1,9 +1,11 @@
+// Variáveis para o nome e XP do herói
 let heroi = "Hunter";
 let xp = 1000;
 
 for (let nivel = 0; nivel < 1; nivel++) {
     let nivelHeroi;
 
+    // Classificação do nível com base no XP
     if (xp <= 1000) {
         nivelHeroi = "Ferro";
       } else if (xp >= 1001 && xp <= 2000) {
@@ -22,5 +24,6 @@ for (let nivel = 0; nivel < 1; nivel++) {
         nivelHeroi = "Radiante";
       }
 
+      // Exibição da mensagem final
       console.log(`O Herói de nome ${heroi} está no nível de ${nivelHeroi}`);
 }
